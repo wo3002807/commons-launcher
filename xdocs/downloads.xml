@@ -18,13 +18,11 @@
    <properties>
       <title>Downloads</title>
       <author email="commons-dev@jakarta.apache.org">Commons Documentation Team</author>
-      <revision>$Id: downloads.xml,v 1.5 2004/08/22 11:22:16 dirkv Exp $</revision>
+      <revision>$Id: downloads.xml,v 1.6 2005/01/16 20:14:43 dirkv Exp $</revision>
    </properties>
 
    <body>
       <section name="Releases">
-         <p>There are no releases available.</p>
-
          <p>The following releases are available:</p>
          <ul>
            <li>Release 1.1 - 22 August 2003 - <a href="release-notes-1.1.html">(release notes)</a></li>
