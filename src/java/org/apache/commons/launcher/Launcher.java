@@ -36,6 +36,9 @@ import org.apache.tools.ant.taskdefs.CallTarget;
 import org.apache.tools.ant.taskdefs.ConditionTask;
 import org.apache.tools.ant.taskdefs.Exit;
 import org.apache.tools.ant.taskdefs.Property;
+import org.apache.tools.ant.taskdefs.Mkdir;
+import org.apache.tools.ant.taskdefs.Copy;
+import org.apache.tools.ant.taskdefs.Delete;
 import org.apache.tools.ant.types.Description;
 import org.apache.tools.ant.types.FileList;
 import org.apache.tools.ant.types.FileSet;
@@ -125,8 +128,10 @@ public class Launcher implements Runnable {
             "available", Available.class,
             "condition", ConditionTask.class,
             "fail", Exit.class,
-            "property", Property.class
-
+            "property", Property.class,
+            "mkdir", Mkdir.class,
+            "delete", Delete.class,
+            "copy", Copy.class
         };
 
     /**
