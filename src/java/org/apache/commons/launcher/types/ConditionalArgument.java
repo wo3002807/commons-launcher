@@ -102,7 +102,7 @@ public class ConditionalArgument extends DataType {
 
     /**
      * Set the "if" condition. Tasks that nest this class as an element
-     * should evaluate this flag in their {@link Task#execute()} method. If the
+     * should evaluate this flag in their {@link org.apache.tools.ant.Task#execute()} method. If the
      * following conditions are true, the task should process this element:
      * <ul>
      * <ol>The flag is neither null nor a empty string
@@ -143,7 +143,7 @@ public class ConditionalArgument extends DataType {
 
     /**
      * Set the "unless" condition. Tasks that nest this class as an element
-     * should evaluate this flag in their {@link Task#execute()} method. If the
+     * should evaluate this flag in their {@link org.apache.tools.ant.Task#execute()} method. If the
      * following conditions are true, the task should ignore this element:
      * <ul>
      * <ol>The flag is neither null nor a empty string
