@@ -23,7 +23,7 @@
  *       "This product includes  software developed  by the Apache  Software *
  *        Foundation <http://www.apache.org/>."                              *
  *                                                                           *
- *    Alternately, this acknowlegement may appear in the software itself, if *
+ *    Alternately, this acknowledgement may appear in the software itself,
  *    and wherever such third-party acknowlegements normally appear.         *
  *                                                                           *
  * 4. The names  "The Jakarta  Project",  and  "Apache  Software Foundation" *
