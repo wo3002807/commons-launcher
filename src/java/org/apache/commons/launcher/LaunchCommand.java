@@ -488,7 +488,7 @@ public class LaunchCommand {
      */
     public void setDisposeminimizedwindow(boolean disposeMinimizedWindow) {
 
-        this.disposeMinimizedWindow = displayMinimizedWindow;
+        this.disposeMinimizedWindow = disposeMinimizedWindow;
 
     }
 

@@ -563,6 +563,14 @@ public class LaunchTask extends Task {
                     String outputFilePath = filteredOutputFile.getCanonicalPath();
                     // Verify that we can write to the output file
                     try {
+			File parentFile = new File(filteredOutputFile.getParent());
+			// To take care of non-existent log directories
+			if ( !parentFile.exists() ) {
+			    //Trying to create non-existent parent directories
+			    parentFile.mkdirs();
+			    //If this fails createNewFile also fails
+			    //We can give more exact error message, if we choose
+			}
                         filteredOutputFile.createNewFile();
                     } catch (IOException ioe) {
                         throw new BuildException(outputFilePath + " " + Launcher.getLocalizedString("output.file.not.creatable", this.getClass().getName()));
@@ -628,8 +636,9 @@ public class LaunchTask extends Task {
             cmd[nextCmdArg++] = filteredMainClassName;
             // Add args to command
             for (int i = 0; i < appArgs.size(); i++)
+	    {
                 cmd[nextCmdArg++] = (String)appArgs.get(i);
-
+	    }
             // Print command
             if (filteredPrint) {
                 // Quote the command arguments
@@ -846,7 +855,7 @@ public class LaunchTask extends Task {
      */
     public void setDisposeminimizedwindow(boolean disposeMinimizedWindow) {
 
-        this.disposeMinimizedWindow = displayMinimizedWindow;
+        this.disposeMinimizedWindow = disposeMinimizedWindow;
 
     }
 

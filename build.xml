@@ -3,7 +3,7 @@
 
 <!--
         "Launcher" component of the Jakarta Commons Subproject
-        $Id: build.xml,v 1.1 2002/10/25 09:03:15 remm Exp $
+        $Id: build.xml,v 1.2 2003/04/22 00:49:17 patrickl Exp $
 -->
 
 
@@ -242,8 +242,7 @@
                perm="a+x"/>
     <pathconvert property="ant.jar.list" targetos="unix">
       <path>
-        <fileset dir="dist/lib" includes="*.jar"/>
-      </path>
+        <fileset dir="${dist.home}/lib" includes="*.jar"/> </path>
     </pathconvert>
     <pathconvert property="dist.home.converted" targetos="unix">
       <path>
