@@ -105,6 +105,11 @@
       <organization></organization>
     </developer>
   </developers>
+  <contributors>
+    <contributor>
+      <name>Alban Peignier</name>
+    </contributor>
+  </contributors>
 
   <dependencies>
     <dependency>
