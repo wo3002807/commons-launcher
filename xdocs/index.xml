@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+ 
+<document>
+ 
+ <properties>
+  <title>Launcher : Java application launcher</title>
+  <author email="remm@apache.org">Remy Maucherat</author>
+ </properties>
+
+<body>
+<section name="Introduction">
+<p>The <em>Launcher</em> Component is designed to be a cross platform Java
+application launcher.</p>
+</section>
+
+<section name="Initial Source of the Package">
+
+<p>The original Java classes come from the Jakarta Tomcat 4.0 project.</p>
+
+<p>The proposed package name for the Launcher component is
+<code>org.apache.commons.launcher</code>.
+</p>
+</section>
+
+</body>
+</document>

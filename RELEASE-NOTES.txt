@@ -1,0 +1,23 @@
+$Id: RELEASE-NOTES.txt,v 1.1 2002/10/25 09:03:16 remm Exp $
+
+			Commons Laucher Package
+			   Version 1.0-dev
+			    Release Notes
+
+
+INTRODUCTION:
+
+This document contains the release notes for this version of the Commons
+Laucher package, and highlights changes since the previous version.  The
+current release adds new features and bug fixes, and is being done now to
+follow the release early/release often mentality.
+
+
+NEW FEATURES:
+
+* Initial import to Commons
+
+
+BUG FIXES:
+
+
