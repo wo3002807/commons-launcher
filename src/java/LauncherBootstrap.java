@@ -1,7 +1,7 @@
 /*
  * $Source: /home/jerenkrantz/tmp/commons/commons-convert/cvs/home/cvs/jakarta-commons//launcher/src/java/LauncherBootstrap.java,v $
- * $Revision: 1.3 $
- * $Date: 2003/11/30 15:15:17 $
+ * $Revision: 1.4 $
+ * $Date: 2003/11/30 15:21:29 $
  *
  * ====================================================================
  *
@@ -62,14 +62,12 @@
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.net.URLDecoder;
 import java.util.ArrayList;
-import java.util.Enumeration;
 import java.util.Properties;
 import java.util.StringTokenizer;
 

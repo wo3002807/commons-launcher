@@ -1,7 +1,7 @@
 /*
  * $Source: /home/jerenkrantz/tmp/commons/commons-convert/cvs/home/cvs/jakarta-commons//launcher/src/java/org/apache/commons/launcher/types/ConditionalVariable.java,v $
- * $Revision: 1.3 $
- * $Date: 2003/11/30 15:15:17 $
+ * $Revision: 1.4 $
+ * $Date: 2003/11/30 15:21:29 $
  *
  * ====================================================================
  *
@@ -62,8 +62,8 @@
 package org.apache.commons.launcher.types;
 
 import java.io.File;
+
 import org.apache.tools.ant.ProjectHelper;
-import org.apache.tools.ant.Task;
 import org.apache.tools.ant.types.DataType;
 import org.apache.tools.ant.types.Path;
 

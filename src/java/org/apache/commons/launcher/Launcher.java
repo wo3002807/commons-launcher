@@ -1,7 +1,7 @@
 /*
  * $Source: /home/jerenkrantz/tmp/commons/commons-convert/cvs/home/cvs/jakarta-commons//launcher/src/java/org/apache/commons/launcher/Launcher.java,v $
- * $Revision: 1.3 $
- * $Date: 2003/11/30 15:15:17 $
+ * $Revision: 1.4 $
+ * $Date: 2003/11/30 15:21:29 $
  *
  * ====================================================================
  *
@@ -68,15 +68,13 @@ import java.net.URL;
 import java.net.URLClassLoader;
 import java.net.URLDecoder;
 import java.util.ResourceBundle;
+
 import org.apache.commons.launcher.types.ArgumentSet;
 import org.apache.commons.launcher.types.JVMArgumentSet;
 import org.apache.commons.launcher.types.SysPropertySet;
-import org.apache.tools.ant.BuildException;
 import org.apache.tools.ant.Main;
 import org.apache.tools.ant.Project;
 import org.apache.tools.ant.ProjectHelper;
-import org.apache.tools.ant.Target;
-import org.apache.tools.ant.Task;
 import org.apache.tools.ant.taskdefs.Ant;
 import org.apache.tools.ant.taskdefs.Available;
 import org.apache.tools.ant.taskdefs.CallTarget;

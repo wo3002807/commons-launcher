@@ -1,7 +1,7 @@
 /*
  * $Source: /home/jerenkrantz/tmp/commons/commons-convert/cvs/home/cvs/jakarta-commons//launcher/src/java/org/apache/commons/launcher/types/JVMArgumentSet.java,v $
- * $Revision: 1.3 $
- * $Date: 2003/11/30 15:15:17 $
+ * $Revision: 1.4 $
+ * $Date: 2003/11/30 15:21:29 $
  *
  * ====================================================================
  *
@@ -61,7 +61,6 @@
 
 package org.apache.commons.launcher.types;
 
-import java.util.ArrayList;
 
 /**
  * A class that represents a set of nested <jvmarg> elements.
