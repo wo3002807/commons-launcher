@@ -3,7 +3,7 @@
   <extend>../commons-build/project.xml</extend>
   <name>Commons Launcher</name>
   <id>commons-launcher</id>
-  <logo>/images/launcher-logo-blue.jpg</logo>
+  <logo>/images/launcher-logo-white.png</logo>
   <url>http://jakarta.apache.org/commons/launcher/</url>
   <inceptionYear>2002</inceptionYear>
   <shortDescription>Commons Launcher</shortDescription>
