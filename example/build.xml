@@ -1,0 +1,133 @@
+<!--
+   Copyright 2003-2004 The Apache Software Foundation
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<!-- $Id: build.xml,v 1.1 2004/07/24 22:00:51 dirkv Exp $ -->
+<project name="launcher-demo" default="dist" basedir=".">
+
+   <target name="init">
+      <tstamp/>
+
+      <!-- read properties from the build.properties, if any -->
+      <property name="component-propfile" value="${basedir}/build.properties"/>
+      <property file="${component-propfile}"/>
+
+      <!-- read properties from the commons build.properties, if any -->
+      <property name="commons-propfile" value="${basedir}/../build.properties"/>
+      <property file="${commons-propfile}"/>
+
+      <!-- read properties from the ${user.home}/propfile, if any -->
+      <property name="user-propfile" value="${user.home}/build.properties"/>
+      <property file="${user-propfile}"/>
+
+      <property name="commons-logging.jar"  value="${basedir}/../../logging/dist/commons-logging.jar"/>
+      <property name="commons-launcher.jar" value="${basedir}/../dist/bin/commons-launcher.jar"/>
+
+      <!-- command line classpath, if any -->
+      <property name="cp" value=""/>
+
+      <!-- now combine the classpaths -->
+      <property name="classpath" value="${cp}:${commons-logging.jar}"/>
+
+      <property name="name" value="launcher-demo"/>
+      <property name="title" value="Jakarta Commons Launcher Demo"/>
+      <property name="version" value="Nightly-${DSTAMP}${TSTAMP}"/>
+      <property name="package" value="org.apache.commons.launcher.example.*"/>
+
+      <property name="src.dir" value="${basedir}/src"/>
+      <property name="src.java.dir" value="${src.dir}/java"/>
+      <property name="build.dir" value="${basedir}/build"/>
+      <property name="build.classes.dir" value="${build.dir}/classes"/>
+      <property name="dist.dir" value="${basedir}/dist"/>
+
+      <property name="javac.optimize" value="false"/>
+      <property name="javac.debug" value="true"/>
+      <property name="javac.deprecation" value="true"/>
+   </target>
+
+   <!-- ######################################################### -->
+
+   <target name="clean" depends="init" description="removes generated files">
+      <delete dir="${build.dir}"/>
+      <delete dir="${dist.dir}"/>
+   </target>
+
+   <!-- ######################################################### -->
+
+   <target name="compile" depends="init" description="compiles source files">
+      <mkdir dir="${build.classes.dir}"/>
+      <javac destdir="${build.classes.dir}"
+             srcdir="${src.java.dir}"
+             classpath="${classpath}"
+             debug="${javac.debug}"
+             deprecation="${javac.deprecation}"
+             optimize="${javac.optimize}"/>
+   </target>
+   
+   <target name="build" depends="clean,compile">
+      <mkdir  dir="${dist.dir}" />
+      <copy todir="${dist.dir}" file="${basedir}/../LICENSE.txt"/>
+      <copy todir="${dist.dir}" file="${basedir}/../NOTICE.txt"/>
+      <copy todir="${dist.dir}" file="${basedir}/../README.txt"/>
+
+      <!-- application launch scripts -->
+      <mkdir       dir="${dist.dir}/bin" />
+      <copy      todir="${dist.dir}/bin"   file="${src.dir}/bin/launcher.properties" />
+      <copy      todir="${dist.dir}/bin"   file="${src.dir}/bin/launcher.xml" />
+      <fixcrlf destdir="${dist.dir}/bin" srcdir="${src.dir}/bin" includes="demo.bat" eol="crlf"/>
+      <fixcrlf destdir="${dist.dir}/bin" srcdir="${src.dir}/bin" includes="demo.sh"  eol="lf"/>
+      <chmod      file="${dist.dir}/bin/demo.sh" perm="a+x"/>
+
+      <!-- launcher -->
+      <copy todir="${dist.dir}/bin" file="${commons-launcher.jar}" />
+      <unjar dest="${dist.dir}/bin"  src="${commons-launcher.jar}">
+         <patternset>
+            <include name="LauncherBootstrap.class"/>
+         </patternset>
+      </unjar>
+
+
+      <!-- application configuration files -->
+      <mkdir  dir="${dist.dir}/etc"/>
+      <copy todir="${dist.dir}/etc"   file="${src.dir}/etc/log4j.xml" />
+
+      <!-- application required libraries -->
+      <mkdir   dir="${dist.dir}/lib"/>
+      <copy  todir="${dist.dir}/lib" file="${commons-logging.jar}"/>
+      <copy  todir="${dist.dir}/lib" file="${log4j.jar}"/>
+      <jar jarfile="${dist.dir}/lib/${name}.jar">
+         <fileset dir="${build.classes.dir}"/>
+         <metainf dir="${basedir}/.." includes="LICENSE.txt,NOTICE.txt"/>
+         <manifest>
+            <attribute name="Built-By" value="${user.name}"/>
+            <attribute name="Package" value="${package}"/>
+            <attribute name="Extension-Name" value="${name}"/>
+            <attribute name="Specification-Vendor" value="Apache Software Foundation"/>
+            <attribute name="Specification-Title" value="${title}"/>
+            <attribute name="Implementation-Version" value="${version}"/>
+            <attribute name="Implementation-Vendor" value="Apache Software Foundation"/>
+         </manifest>
+      </jar>
+
+      <!-- launcher required libraries -->
+      <mkdir  dir="${dist.dir}/lib/launcher"/>
+      <copy todir="${dist.dir}/lib/launcher" file="${ant.home}/lib/ant.jar"/>
+      <copy todir="${dist.dir}/lib/launcher" file="${ant.home}/lib/ant-launcher.jar" failonerror="false"/>
+      <copy todir="${dist.dir}/lib/launcher" file="${ant.home}/lib/xercesImpl.jar"/>
+      <copy todir="${dist.dir}/lib/launcher" file="${ant.home}/lib/xml-apis.jar"/>
+   </target>
+
+   <target name="dist" depends="build" description="gump target"/>
+   
+</project>
