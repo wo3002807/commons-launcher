@@ -13,7 +13,7 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 -->
-<!-- $Id: build.xml,v 1.1 2004/07/24 22:00:51 dirkv Exp $ -->
+<!-- $Id$ -->
 <project name="launcher-demo" default="dist" basedir=".">
 
    <target name="init">
