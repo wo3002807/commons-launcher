@@ -18,7 +18,7 @@
 
 <!--
         "Launcher" component of the Jakarta Commons Subproject
-        $Id: build.xml,v 1.5 2004/07/24 21:49:55 dirkv Exp $
+        $Id: build.xml,v 1.6 2004/07/24 22:38:24 dirkv Exp $
 -->
 
 
@@ -299,6 +299,8 @@
   <target name="release" depends="clean,dist"
    description="Create release distribution">
 
+    <ant antfile="build.xml" dir="example" target="clean"/>
+
     <mkdir dir="${release.home}"/>
 
     <!-- Create binary distributions -->
@@ -319,6 +321,9 @@
         <exclude name="${build.home}/**"/>
         <exclude name="${dist.home}/**"/>
         <exclude name="${release.home}/**"/>
+        <exclude name="**/build.properties"/>
+        <exclude name="*.log"/>
+        <exclude name=".*"/>
       </tarfileset>
 	</tar>
 	<zip
@@ -328,8 +333,21 @@
         <exclude name="${build.home}/**"/>
         <exclude name="${dist.home}/**"/>
         <exclude name="${release.home}/**"/>
+        <exclude name="**/build.properties"/>
+        <exclude name="*.log"/>
+        <exclude name=".*"/>
       </zipfileset>
 	</zip>
+
+    <!-- Create source distributions -->
+    <ant antfile="build.xml" dir="example" target="dist"/>
+
+    <tar compression="gzip" destfile="${release.home}/${ant.project.name}-example-${release.version}.tar.gz">
+      <tarfileset dir="${basedir}/example/dist" prefix="${ant.project.name}-example" />
+    </tar>
+    <zip destfile="${release.home}/${ant.project.name}-example-${release.version}.zip">
+      <zipfileset dir="${basedir}/example/dist" prefix="${ant.project.name}-example" />
+    </zip>
 
   </target>
 
