@@ -18,7 +18,7 @@
 
 <!--
         "Launcher" component of the Jakarta Commons Subproject
-        $Id: build.xml,v 1.6 2004/07/24 22:38:24 dirkv Exp $
+        $Id: build.xml,v 1.7 2004/08/16 14:16:05 dirkv Exp $
 -->
 
 
@@ -58,7 +58,7 @@
   <property name="component.title"         value="Launcher"/>
 
   <!-- The current version number of this component -->
-  <property name="component.version"       value="1.0-dev"/>
+  <property name="component.version"       value="1.0-rc1"/>
 
   <!-- The base directory for compilation targets -->
   <property name="build.home"              value="target"/>
