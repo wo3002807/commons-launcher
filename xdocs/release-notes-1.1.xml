@@ -16,9 +16,9 @@
 -->
 <document>
    <properties>
-      <title>Release notes for Commons-Launcher 1.0</title>
+      <title>Release notes for Commons-Launcher 1.1</title>
       <author email="commons-dev@jakarta.apache.org">Commons Documentation Team</author>
-      <revision>$Id: release-notes-1.0.xml,v 1.1 2004/08/16 14:17:21 dirkv Exp $</revision>
+      <revision>$Id: release-notes-1.1.xml,v 1.1 2004/08/22 11:18:35 dirkv Exp $</revision>
    </properties>
 
    <body>
@@ -30,6 +30,11 @@ Launcher was imported into jakarta commons almost 2 years ago (25 okt 2002) but 
 <p>The Launcher Component is designed to be a cross platform Java
 application launcher.</p>
 <p>The original Java classes come from the Jakarta Tomcat 4.0 project.</p>
+<p>
+Tomcat has been shipping the 1.0-dev version from CVS for a while now
+(definitely more than a year), so this official release will be labaled 1.1
+to avoid confusion.
+</p>
 
 <!-- BEGIN include homepage -->
 <p>
