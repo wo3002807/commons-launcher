@@ -30,8 +30,6 @@
   </description>
   <logo>/images/launcher-logo-white.png</logo>
   
-  <logo>/images/logo.png</logo>
-  
   <url>http://jakarta.apache.org/commons/${pom.artifactId.substring(8)}/</url>
   <package>org.apache.commons.${pom.artifactId.substring(8)}</package>
 
@@ -105,7 +103,8 @@
       <id>dirkv</id>
       <email></email>
       <organization></organization>
-    </developer>  </developers>
+    </developer>
+  </developers>
 
   <dependencies>
     <dependency>
