@@ -201,7 +201,7 @@ public class ChildMain extends Thread {
                     if (title != null)
                         frame.setTitle(title);
                     frame.setState(Frame.ICONIFIED);
-                    String icon = System.getProperty(ChildMain.MINIMIZED_WINDOW_TITLE_PROP_NAME);
+                    String icon = System.getProperty(ChildMain.MINIMIZED_WINDOW_ICON_PROP_NAME);
                     if (icon != null) {
                         Image iconImage = Toolkit.getDefaultToolkit().createImage(icon);
                         if (iconImage != null)
