@@ -533,7 +533,12 @@ public class Launcher implements Runnable {
                 throw new IOException(Launcher.getLocalizedString("bootstrap.file.not.found") + ": " + Launcher.class.getName());
             String resourcePath = null;
             String embeddedClassName = null;
-            boolean isJar = "jar".equals(resource.getProtocol()) ? true : false;
+            boolean isJar = false;
+            String protocol = resource.getProtocol();
+            if ((protocol != null) &&
+                (protocol.indexOf("jar") >= 0)) {
+                isJar = true;
+            }
             if (isJar) {
                 resourcePath = URLDecoder.decode(resource.getFile());
                 embeddedClassName = "!" + classResourceName;
