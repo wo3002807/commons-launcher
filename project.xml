@@ -21,7 +21,7 @@
   
   <name>Commons Launcher</name>
   <id>commons-launcher</id>
-  <currentVersion>1.0-rc1</currentVersion>
+  <currentVersion>1.1</currentVersion>
   <inceptionYear>2002</inceptionYear>
   <shortDescription>Commons Launcher</shortDescription>
   <description>
@@ -72,6 +72,14 @@
       <archive>http://nagoya.apache.org/eyebrowse/SummarizeList?listName=commons-user@jakarta.apache.org</archive>
     </mailingList>
   </mailingLists>
+
+  <versions>
+    <version>
+      <id>1.1</id>
+      <name>1.1</name>
+      <tag>LAUNCHER_1_1</tag>
+    </version>
+  </versions>
 
   <developers>
     <developer>

@@ -18,17 +18,16 @@
    <properties>
       <title>Downloads</title>
       <author email="commons-dev@jakarta.apache.org">Commons Documentation Team</author>
-      <revision>$Id: downloads.xml,v 1.3 2004/08/16 14:17:21 dirkv Exp $</revision>
+      <revision>$Id: downloads.xml,v 1.4 2004/08/22 11:19:57 dirkv Exp $</revision>
    </properties>
 
    <body>
       <section name="Releases">
          <p>There are no releases available.</p>
 
-<!--
          <p>The following releases are available:</p>
          <ul>
-           <li>Version 1.0 - 20 August 2004</li>
+           <li>Release 1.1 - 20 October 2003 - <a href="release-notes-1.1.html">(release notes)</a></li>
          </ul>
          <br/>
          <p>
@@ -45,7 +44,6 @@
             <a href="http://archive.apache.org/dist/jakarta/commons/launcher/">
             special archive area</a>.
          </p>
--->
          <p>
            <a href="http://cvs.apache.org/builds/jakarta-commons/nightly/commons-launcher/">
            Nightly source and binary drops</a> are available.
@@ -55,7 +53,7 @@
             through <a href="cvs-usage.html">anonymous CVS access</a>.
          </p>
       </section>
-
+<!--
       <section name="Release Candidate">
          <p>
             We are currently preparing the 1.0 release following this
@@ -76,6 +74,6 @@
             Final release target is 20 August 2004. 
          </p>
       </section>
-
+-->
    </body>
 </document>
