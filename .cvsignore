@@ -7,3 +7,4 @@ target
 maven.log
 velocity.log
 eclipse_classes
+release
