@@ -18,7 +18,7 @@
 
 <!--
         "Launcher" component of the Jakarta Commons Subproject
-        $Id: build.xml,v 1.8 2004/08/22 11:19:56 dirkv Exp $
+        $Id: build.xml,v 1.9 2004/08/22 11:33:41 dirkv Exp $
 -->
 
 
@@ -315,7 +315,7 @@
 
     <!-- Create source distributions -->
 	<tar compression="gzip"
-     destfile="${release.home}/${ant.project.name}-src-${release.version}.tar.gz">
+     destfile="${release.home}/${ant.project.name}-${release.version}-src.tar.gz">
 	  <tarfileset dir="${basedir}" prefix="${ant.project.name}">
         <exclude name="**/CVS/**"/>
         <exclude name="${build.home}/**"/>
@@ -327,7 +327,7 @@
       </tarfileset>
 	</tar>
 	<zip
-     destfile="${release.home}/${ant.project.name}-src-${release.version}.zip">
+     destfile="${release.home}/${ant.project.name}-${release.version}-src.zip">
 	  <zipfileset dir="${basedir}" prefix="${ant.project.name}">
         <exclude name="**/CVS/**"/>
         <exclude name="${build.home}/**"/>
@@ -342,10 +342,10 @@
     <!-- Create source distributions -->
     <ant antfile="build.xml" dir="example" target="dist"/>
 
-    <tar compression="gzip" destfile="${release.home}/${ant.project.name}-example-${release.version}.tar.gz">
+    <tar compression="gzip" destfile="${release.home}/${ant.project.name}-${release.version}-example.tar.gz">
       <tarfileset dir="${basedir}/example/dist" prefix="${ant.project.name}-example" />
     </tar>
-    <zip destfile="${release.home}/${ant.project.name}-example-${release.version}.zip">
+    <zip destfile="${release.home}/${ant.project.name}-${release.version}-example.zip">
       <zipfileset dir="${basedir}/example/dist" prefix="${ant.project.name}-example" />
     </zip>
 
