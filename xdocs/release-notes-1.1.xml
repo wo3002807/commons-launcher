@@ -18,11 +18,11 @@
    <properties>
       <title>Release notes for Commons-Launcher 1.1</title>
       <author email="commons-dev@jakarta.apache.org">Commons Documentation Team</author>
-      <revision>$Id: release-notes-1.1.xml,v 1.1 2004/08/22 11:18:35 dirkv Exp $</revision>
+      <revision>$Id: release-notes-1.1.xml,v 1.2 2004/08/22 11:24:05 dirkv Exp $</revision>
    </properties>
 
    <body>
-     <section name="Release notes for Commons-Launcher 1.0">
+     <section name="Release notes for Commons-Launcher 1.1">
 <p>
 Launcher was imported into jakarta commons almost 2 years ago (25 okt 2002) but never had a release. 
 </p>
