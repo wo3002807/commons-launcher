@@ -18,7 +18,7 @@
 
 <!--
         "Launcher" component of the Jakarta Commons Subproject
-        $Id: build.xml,v 1.9 2004/08/22 11:33:41 dirkv Exp $
+        $Id: build.xml,v 1.10 2005/01/16 20:13:42 dirkv Exp $
 -->
 
 
@@ -58,7 +58,7 @@
   <property name="component.title"         value="Launcher"/>
 
   <!-- The current version number of this component -->
-  <property name="component.version"       value="1.1"/>
+  <property name="component.version"       value="1.2-dev"/>
 
   <!-- The base directory for compilation targets -->
   <property name="build.home"              value="target"/>
@@ -212,6 +212,7 @@
                  bottom="Copyright (c) 2001-2002 - Apache Software Foundation">
       <classpath refid="compile.classpath"/>
       <classpath location="${ant.home}/lib/ant.jar"/>
+      <link href="http://java.sun.com/j2se/1.4.2/docs/api"/>
     </javadoc>
   </target>
 
