@@ -844,7 +844,7 @@ public class LaunchTask extends Task {
     /**
      * Set the filter class' classpath.
      *
-     * @param classpath the classpath for the filter class
+     * @param filterClasspath the classpath for the filter class
      */
     public void setFilterclasspath(Path filterClasspath) {
 
@@ -940,7 +940,7 @@ public class LaunchTask extends Task {
      * JRE. Setting this flag to false explicitly allows the user to use
      * a JRE.
      *
-     * @param redirect true if a JDK is required and false if only a JRE
+     * @param requireTools true if a JDK is required and false if only a JRE
      *  is required
      */
     public void setRequiretools(boolean requireTools) {

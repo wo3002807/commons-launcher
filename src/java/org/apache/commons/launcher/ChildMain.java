@@ -141,12 +141,10 @@ public class ChildMain extends Thread {
 
     /**
      * Invoke the target application.
-     *
-     * @param args command line arguments
      */
     public void run() {
 
-        // If there are no arguments, do nothing
+        // If there are no command line arguments, do nothing
         if (args == null || args.length == 0)
             return;
 

@@ -103,7 +103,7 @@ public class ConditionalVariable extends DataType {
     /**
      * Set the value to a {@link File}.
      *
-     * @param value the {@link File} for this variable
+     * @param file the {@link File} for this variable
      */
     public void setFile(File file) {
 
@@ -114,7 +114,7 @@ public class ConditionalVariable extends DataType {
     /**
      * Set the value to a {@link Path}.
      *
-     * @param value the {@link Path} for this variable
+     * @param path the {@link Path} for this variable
      */
     public void setPath(Path path) {
 
@@ -154,7 +154,7 @@ public class ConditionalVariable extends DataType {
     /**
      * Set the value to a {@link Path}.
      *
-     * @param value the {@link Path} for this variable
+     * @param path the {@link Path} for this variable
      */
     public void setFile(Path path) {
 

@@ -486,7 +486,7 @@ public class Launcher implements Runnable {
     /**
      * Print a detailed error message and exit.
      *
-     * @param message the exception whose stack trace is to be printed.
+     * @param t the exception whose stack trace is to be printed.
      */
     public static void error(Throwable t) {
 
@@ -850,7 +850,7 @@ public class Launcher implements Runnable {
     /**
      * Set the PrintStream that all output should printed to.
      *
-     * @param a PrintStream instance to print output to
+     * @param log PrintStream instance to print output to
      */
     public static synchronized void setLog(PrintStream log) {
 
