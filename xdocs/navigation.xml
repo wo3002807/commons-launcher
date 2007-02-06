@@ -28,7 +28,6 @@
 
         <menu name="Commons&#xA0;Launcher">
             <item name="Overview"                      href="/index.html" />
-            <item name="API&#xA0;Documentation"        href="/apidocs/index.html"/>
             <item name="Example"                       href="/example.html"/>
             <item name="Download"                      href="http://jakarta.apache.org/site/downloads/downloads_commons-launcher.cgi"/>
             <item name="Dependencies"                  href="/dependencies.html"/>
@@ -36,7 +35,13 @@
             <item name="Wiki"                          href="http://wiki.apache.org/jakarta-commons/Launcher"/>
         </menu>
 
+        <menu name="1.1 Release">
+            <item name="Release Notes"           href="/release-notes-1.1.html"/>
+            <item name="JavaDoc"                 href="http://jakarta.apache.org/commons/launcher/api-1.1/"/>
+        </menu>
+
         <menu name="Development">
+            <item name="Latest JavaDoc"          href="apidocs/index.html"/>
             <item name="Mailing Lists"           href="/mail-lists.html"/>
             <item name="Issue Tracking"          href="/issue-tracking.html"/>
             <item name="Latest JavaDoc"          href="/apidocs/index.html"/>
