@@ -190,7 +190,7 @@
     <delete    dir="${build.home}"/>
     <delete    dir="${dist.home}"/>
     <delete    dir="${release.home}"/>
-    <delete   file="commons-${component.name}.jar"/>
+    <delete   file="commons-${component.name}-${release.version}.jar"/>
   </target>
 
 
@@ -279,7 +279,7 @@
    description="Create jar">
     <mkdir      dir="${dist.home}"/>
     <mkdir      dir="${dist.home}/bin"/>
-    <jar    jarfile="${dist.home}/bin/commons-${component.name}.jar"
+    <jar    jarfile="${dist.home}/bin/commons-${component.name}-${release.version}.jar"
             basedir="${build.home}/classes"
            manifest="${build.home}/conf/MANIFEST.MF">
        <metainf dir="${basedir}" includes="LICENSE.txt,NOTICE.txt"/>
@@ -293,7 +293,7 @@
    description="--> Installs jar file in ${lib.repo}">
     <copy todir="${lib.repo}" filtering="off">
       <fileset dir="${dist.home}">
-        <include name="commons-${component.name}.jar"/>
+        <include name="commons-${component.name}-${release.version}.jar"/>
       </fileset>
     </copy>
   </target>
@@ -308,17 +308,17 @@
     <!-- Create binary distributions -->
 	<tar compression="gzip"
      destfile="${release.home}/${ant.project.name}-${release.version}.tar.gz">
-	  <tarfileset dir="${dist.home}" prefix="${ant.project.name}"/>
+	  <tarfileset dir="${dist.home}" prefix="${ant.project.name}-${release.version}"/>
 	</tar>
 	<zip
      destfile="${release.home}/${ant.project.name}-${release.version}.zip">
-	  <zipfileset dir="${dist.home}" prefix="${ant.project.name}"/>
+	  <zipfileset dir="${dist.home}" prefix="${ant.project.name}-${release.version}"/>
 	</zip>
 
     <!-- Create source distributions -->
 	<tar compression="gzip"
      destfile="${release.home}/${ant.project.name}-${release.version}-src.tar.gz">
-	  <tarfileset dir="${basedir}" prefix="${ant.project.name}">
+	  <tarfileset dir="${basedir}" prefix="${ant.project.name}-${release.version}-src">
         <exclude name="**/CVS/**"/>
         <exclude name="${build.home}/**"/>
         <exclude name="${dist.home}/**"/>
@@ -330,7 +330,7 @@
 	</tar>
 	<zip
      destfile="${release.home}/${ant.project.name}-${release.version}-src.zip">
-	  <zipfileset dir="${basedir}" prefix="${ant.project.name}">
+	  <zipfileset dir="${basedir}" prefix="${ant.project.name}-${release.version}-src">
         <exclude name="**/CVS/**"/>
         <exclude name="${build.home}/**"/>
         <exclude name="${dist.home}/**"/>
@@ -348,7 +348,7 @@
       <tarfileset dir="${basedir}/example/dist" prefix="${ant.project.name}-example" />
     </tar>
     <zip destfile="${release.home}/${ant.project.name}-${release.version}-example.zip">
-      <zipfileset dir="${basedir}/example/dist" prefix="${ant.project.name}-example" />
+      <zipfileset dir="${basedir}/example/dist" prefix="${ant.project.name}-${release.version}-example" />
     </zip>
 
   </target>
