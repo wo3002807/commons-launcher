@@ -25,7 +25,7 @@ import org.apache.tools.ant.types.DataType;
 import org.apache.tools.ant.types.Path;
 
 /**
- * A class that represents nested <arg> or <jvmarg> elements. This class
+ * A class that represents nested &lt;arg&gt; or &lt;jvmarg&gt; elements. This class
  * provides the same functionality as the class that represents these same
  * elements in a "java" task. In addition, this class supports conditional "if"
  * and "unless" attributes.

@@ -19,7 +19,7 @@ package org.apache.commons.launcher.types;
 
 
 /**
- * A class that represents a set of nested <arg> elements.
+ * A class that represents a set of nested &lt;arg&gt; elements.
  *
  * @author Patrick Luby
  */
