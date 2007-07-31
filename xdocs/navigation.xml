@@ -29,7 +29,7 @@
         <menu name="Commons&#xA0;Launcher">
             <item name="Overview"                      href="/index.html" />
             <item name="Example"                       href="/example.html"/>
-            <item name="Download"                      href="http://jakarta.apache.org/site/downloads/downloads_commons-launcher.cgi"/>
+            <item name="Download"                      href="http://commons.apache.org/downloads/download_launcher.cgi"/>
             <item name="Dependencies"                  href="/dependencies.html"/>
             <item name="License"                       href="/license.html"/>
             <item name="Wiki"                          href="http://wiki.apache.org/jakarta-commons/Launcher"/>

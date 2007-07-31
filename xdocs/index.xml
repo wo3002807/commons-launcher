@@ -27,7 +27,7 @@
 <section name="The Launcher Component">
 <p>The Launcher Component is designed to be a cross platform Java
 application launcher.</p>
-<p>The original Java classes come from the Jakarta Tomcat 4.0 project.</p>
+<p>The original Java classes come from the Tomcat 4.0 project.</p>
 
 <p>
 Commons-launcher eliminates the need for a batch or shell script to launch a 
@@ -56,7 +56,7 @@ be desirable are:
 
 <section name="Releases">
     <p>
-       See the <a href="http://jakarta.apache.org/site/downloads/downloads_commons-launcher.cgi">downloads</a> page for information on obtaining releases.
+       See the <a href="http://commons.apache.org/downloads/download_launcher.cgi">downloads</a> page for information on obtaining releases.
     </p>
 <br/>
 </section>
