@@ -16,8 +16,8 @@
   </description>
     <repository>
       <SVNRepository>
-        <browse rdf:resource="http://svn.apache.org/repos/asf/jakarta/commons/proper/launcher/trunk"/>
-        <location rdf:resource="http://svn.apache.org/repos/asf/jakarta/commons/proper/launcher"/>
+        <browse rdf:resource="http://svn.apache.org/repos/asf/commons/proper/launcher/trunk"/>
+        <location rdf:resource="http://svn.apache.org/repos/asf/commons/proper/launcher"/>
       </SVNRepository>
     </repository>
     <release>
