@@ -42,7 +42,7 @@
       <property name="classpath" value="${cp}:${commons-logging.jar}"/>
 
       <property name="name" value="launcher-demo"/>
-      <property name="title" value="Jakarta Commons Launcher Demo"/>
+      <property name="title" value="Apache Commons Launcher Demo"/>
       <property name="version" value="Nightly-${DSTAMP}${TSTAMP}"/>
       <property name="package" value="org.apache.commons.launcher.example.*"/>
 

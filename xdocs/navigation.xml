@@ -15,7 +15,7 @@
    See the License for the specific language governing permissions and
    limitations under the License.
   -->
-<!DOCTYPE org.apache.commons.menus SYSTEM 'http://jakarta.apache.org/commons/build/maven-build.dtd'>
+<!DOCTYPE org.apache.commons.menus SYSTEM 'http://commons.apache.org/build/maven-build.dtd'>
 <project name="Commons Launcher">
     <title>Commons Launcher</title>
     <body>
@@ -23,7 +23,7 @@
         <links>
             <item name="Apache"  href="http://www.apache.org"/>
             <item name="Jakarta" href="http://jakarta.apache.org"/>
-            <item name="Commons" href="http://jakarta.apache.org/commons/"/>
+            <item name="Commons" href="http://commons.apache.org/"/>
         </links>
 
         <menu name="Commons&#xA0;Launcher">
@@ -37,7 +37,7 @@
 
         <menu name="1.1 Release">
             <item name="Release Notes"           href="/release-notes-1.1.html"/>
-            <item name="JavaDoc"                 href="http://jakarta.apache.org/commons/launcher/api-1.1/"/>
+            <item name="JavaDoc"                 href="http://commons.apache.org/launcher/api-1.1/"/>
         </menu>
 
         <menu name="Development">
