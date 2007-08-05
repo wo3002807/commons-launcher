@@ -31,7 +31,7 @@
             <item name="Download"                      href="http://commons.apache.org/downloads/download_launcher.cgi"/>
             <item name="Dependencies"                  href="/dependencies.html"/>
             <item name="License"                       href="/license.html"/>
-            <item name="Wiki"                          href="http://wiki.apache.org/jakarta-commons/Launcher"/>
+            <item name="Wiki"                          href="http://wiki.apache.org/commons/Launcher"/>
         </menu>
 
         <menu name="1.1 Release">
