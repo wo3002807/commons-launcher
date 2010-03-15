@@ -26,7 +26,7 @@
         <menu name="Launcher">
             <item name="Overview"               href="/index.html" />
             <item name="Example"                href="/example.html"/>
-            <item name="Download"               href="http://commons.apache.org/downloads/download_launcher.cgi"/>
+            <item name="Download"               href="http://commons.apache.org/launcher/download_launcher.cgi"/>
             <item name="Dependencies"           href="/dependencies.html"/>
             <item name="License"                href="/license.html"/>
             <item name="Wiki"                   href="http://wiki.apache.org/commons/Launcher"/>
