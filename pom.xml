@@ -34,7 +34,7 @@
         Launcher are a set of Java classes which aim at making a cross
         platform Java application launcher.
   </description>
-  <url>http://commons.apache.org/launcher/</url>
+  <url>http://commons.apache.org/proper/commons-transaction/</url>
 
   <issueManagement>
     <system>jira</system>
