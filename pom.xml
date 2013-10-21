@@ -28,7 +28,7 @@
   <groupId>commons-launcher</groupId>
   <artifactId>commons-launcher</artifactId>
   <version>1.2-SNAPSHOT</version>
-  <name>Commons Launcher</name>
+  <name>Apache Commons Launcher</name>
   <inceptionYear>2002</inceptionYear>
   <description>
         Launcher are a set of Java classes which aim at making a cross
